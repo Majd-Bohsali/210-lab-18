@@ -96,7 +96,7 @@ void output(Node* hd) {
     Node* current = hd;
     int reviewNum = 1; 
     while (current) {
-        cout << "    > Review #" << reviewNum; 
+        cout << "    > Review #" << reviewNum << ": " << current->rating << ": " << current->comments; 
         current = current->next;
     }
     cout << endl;
