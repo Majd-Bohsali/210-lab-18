@@ -101,7 +101,7 @@ void output(Node* hd) {
     int reviewNum = 0; 
     float totalRatingScore = 0.0; 
     while (current) {
-        cout << "    > Review #" << reviewNum++ << ": " << current->rating << ": " << current->comments << endl; 
+        cout << "    > Review #" << ++reviewNum << ": " << current->rating << ": " << current->comments << endl; 
         totalRatingScore += current->rating; 
         current = current->next;
     }
